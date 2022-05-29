@@ -1,10 +1,14 @@
-import './App.css';
+import {Routes, Route} from 'react-router-dom'
+import './App.css'
+import About from './pages/About';
+import Home from './pages/Home';
 
-function App() {
+const App = () =>{
   return (
-    <div className="App">
-      <h1 className='bg-violet-700 p-5 font-bold text-5xl'>Prince Morgan</h1>
-    </div>
+    <Routes>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/home' element={<Home/>}/>
+    </Routes>
   );
 }
 
